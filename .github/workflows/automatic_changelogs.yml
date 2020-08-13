@@ -6,7 +6,7 @@ on:
 
 env:
     GIT_EMAIL: "action@github.com"
-    GIT_NAME: "Changelog Automaker" 
+    GIT_NAME: "Changelog-Automaker" 
     CL_AUTOMAKER_DIR: "./tools/ChangelogAutomaker"
 
 jobs:
