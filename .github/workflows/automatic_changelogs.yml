@@ -1,4 +1,4 @@
-name: Automatically make changelogs
+name: Changelog Automaker
 
 on:
   push:
