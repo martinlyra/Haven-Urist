@@ -5,7 +5,6 @@ on:
     branches: [master]
 
 env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     GIT_EMAIL: "action@github.com"
     GIT_NAME: "Changelog Automaker" 
     CL_AUTOMAKER_DIR: "./tools/ChangelogAutomaker"
@@ -41,4 +40,4 @@ jobs:
       - name: Push
         uses: ad-m/github-push-action@master
         with:
-          github_token: $GITHUB_TOKEN
+          github_token: ${{ secrets.GITHUB_TOKEN }}
