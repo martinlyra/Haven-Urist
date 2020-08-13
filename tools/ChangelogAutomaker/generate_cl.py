@@ -86,11 +86,11 @@ if write_cl['changes']:
         yaml.dump(write_cl, cl_contents)
         cl_contents.seek(0)
 
-        fname = "./.changelog/AutoChangeLog-pr-{pr_number}.yml"
+        fname = f"./.changelog/AutoChangeLog-pr-{pr_number}.yml"
         f = open(fname, "w+")
         f.write(cl_contents.read())
         f.close()
-        print("PR changelog written to `{fname}`")
+        print(f"PR changelog written to `{fname}`")
 
     print("Done!")
 else:
