@@ -31,7 +31,7 @@ jobs:
       - name: Generate CL
         run: python $CL_AUTOMAKER_DIR/generate_cl.py
       - name: Compile CL
-        run: python $CL_AUTOMAKER_DIR/ss13_genchangelog.py html/changelog.html .changelog
+        run: python $CL_AUTOMAKER_DIR/compile_cl.py html/changelog.html .changelog
       - name: Commit
         run: |
           git config --local user.email $GIT_EMAIL
