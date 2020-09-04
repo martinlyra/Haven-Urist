@@ -1846,7 +1846,6 @@
 #include "code\modules\mob\living\carbon\human\spawners.dm"
 #include "code\modules\mob\living\carbon\human\stripping.dm"
 #include "code\modules\mob\living\carbon\human\unarmed_attack.dm"
-#include "code\modules\mob\living\carbon\human\update_icons.dm"
 #include "code\modules\mob\living\carbon\human\whisper.dm"
 #include "code\modules\mob\living\carbon\human\descriptors\_descriptors.dm"
 #include "code\modules\mob\living\carbon\human\descriptors\descriptors_generic.dm"
@@ -3023,4 +3022,7 @@
 #include "maps\~mapsystem\maps_jobs.dm"
 #include "maps\~mapsystem\maps_unit_testing.dm"
 #include "maps\~unit_tests\unit_testing.dm"
+#include "Source\Modules\HavenSpecies\~module.dm"
+#include "Source\BaseModules\RICk\~module.dm"
+#include "Source\BaseModules\ComplexMobs\~module.dm"
 // END_INCLUDE
