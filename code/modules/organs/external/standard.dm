@@ -58,6 +58,7 @@
 	organ_tag = BP_L_ARM
 	name = "left arm"
 	icon_name = "l_arm"
+	icon_position = LEFT
 	max_damage = 50
 	min_broken_damage = 30
 	w_class = ITEM_SIZE_NORMAL
@@ -74,6 +75,7 @@
 	organ_tag = BP_R_ARM
 	name = "right arm"
 	icon_name = "r_arm"
+	icon_position = RIGHT
 	body_part = ARM_RIGHT
 	joint = "right elbow"
 	amputation_point = "right shoulder"
@@ -134,6 +136,7 @@
 	organ_tag = BP_L_HAND
 	name = "left hand"
 	icon_name = "l_hand"
+	icon_position = LEFT
 	max_damage = 30
 	min_broken_damage = 15
 	w_class = ITEM_SIZE_SMALL
@@ -149,6 +152,7 @@
 	organ_tag = BP_R_HAND
 	name = "right hand"
 	icon_name = "r_hand"
+	icon_position = RIGHT
 	body_part = HAND_RIGHT
 	parent_organ = BP_R_ARM
 	joint = "right wrist"
