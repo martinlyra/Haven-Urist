@@ -209,7 +209,43 @@
 		mymob.internals.screen_loc = ui_internal
 		hud_elements |= mymob.internals
 
+	/**
+	*** RIGHT HUD BAR
+	**/
+
+	// Warnings background
+	using = new /atom/movable/screen()
+	using.dir = SOUTH
+	using.icon = ui_style
+	using.icon_state = "dash_cap"
+	using.screen_loc = UI_WARNING_TOXIN
+	using.layer = UNDER_HUD_LAYER
+	adding += using
+
+	using = new /atom/movable/screen()
+	using.dir = NORTH
+	using.icon = ui_style
+	using.icon_state = "dash_cap"
+	using.screen_loc = UI_WARNING_FREEZE
+	using.layer = UNDER_HUD_LAYER
+	adding += using
+
+	using = new /atom/movable/screen()
+	using.dir = SOUTH
+	using.icon = ui_style
+	using.icon_state = "dash_vertical"
+	using.screen_loc = "[UI_WARNING_OXYGEN] to [UI_WARNING_FIRE]"
+	using.layer = UNDER_HUD_LAYER
+	adding += using
+
 	if(hud_data.has_warnings)
+		mymob.toxin = new /atom/movable/screen()
+		mymob.toxin.icon = ui_style
+		mymob.toxin.icon_state = "tox0"
+		mymob.toxin.SetName("toxin")
+		mymob.toxin.screen_loc = UI_WARNING_TOXIN
+		hud_elements |= mymob.toxin
+
 		mymob.oxygen = new /atom/movable/screen()
 		mymob.oxygen.icon = ui_style
 		mymob.oxygen.icon_state = "oxy0"
@@ -217,19 +253,19 @@
 		mymob.oxygen.screen_loc = ui_oxygen
 		hud_elements |= mymob.oxygen
 
-		mymob.toxin = new /atom/movable/screen()
-		mymob.toxin.icon = ui_style
-		mymob.toxin.icon_state = "tox0"
-		mymob.toxin.SetName("toxin")
-		mymob.toxin.screen_loc = ui_toxin
-		hud_elements |= mymob.toxin
-
 		mymob.fire = new /atom/movable/screen()
 		mymob.fire.icon = ui_style
 		mymob.fire.icon_state = "fire0"
 		mymob.fire.SetName("fire")
 		mymob.fire.screen_loc = ui_fire
 		hud_elements |= mymob.fire
+
+		mymob.freeze = new /atom/movable/screen()
+		mymob.freeze.icon = ui_style
+		mymob.freeze.icon_state = "freeze0"
+		mymob.freeze.SetName("freeze")
+		mymob.freeze.screen_loc = UI_WARNING_FREEZE
+		hud_elements |= mymob.freeze
 
 		mymob.healths = new /atom/movable/screen()
 		mymob.healths.icon = ui_style
@@ -239,22 +275,69 @@
 		hud_elements |= mymob.healths
 
 	if(hud_data.has_pressure)
+		using = new /atom/movable/screen()
+		using.dir = SOUTH
+		using.icon = ui_style
+		using.icon_state = "gauge_pressure"
+		using.screen_loc = UI_METER_PRESSURE
+		using.layer = UNDER_HUD_LAYER
+		adding += using
+
 		mymob.pressure = new /atom/movable/screen()
 		mymob.pressure.icon = ui_style
-		mymob.pressure.icon_state = "pressure0"
-		mymob.pressure.SetName("pressure")
-		mymob.pressure.screen_loc = ui_pressure
+		mymob.pressure.icon_state = "gauge_indictator"
+		mymob.pressure.SetName("Pressure")
+		mymob.pressure.screen_loc = UI_METER_PRESSURE
 		hud_elements |= mymob.pressure
 
+		mymob.pressure_lamp = new /atom/movable/screen()
+		mymob.pressure_lamp.icon = ui_style
+		mymob.pressure_lamp.icon_state = "cover_alert_0"
+		mymob.pressure_lamp.screen_loc = UI_METER_PRESSURE
+		mymob.pressure_lamp.layer = UNDER_HUD_LAYER + 2
+		hud_elements |= mymob.pressure_lamp
+
+		using = new /atom/movable/screen()
+		using.dir = SOUTH
+		using.icon = ui_style
+		using.icon_state = "cover_pressure"
+		using.screen_loc = UI_METER_PRESSURE
+		using.layer = UNDER_HUD_LAYER + 1
+		adding += using
+
 	if(hud_data.has_bodytemp)
+		using = new /atom/movable/screen()
+		using.dir = SOUTH
+		using.icon = ui_style
+		using.icon_state = "gauge_temp"
+		using.screen_loc = UI_METER_BODY_TEMPERATURE
+		using.layer = UNDER_HUD_LAYER
+		adding += using
+
 		mymob.bodytemp = new /atom/movable/screen()
 		mymob.bodytemp.icon = ui_style
-		mymob.bodytemp.icon_state = "temp1"
-		mymob.bodytemp.SetName("body temperature")
-		mymob.bodytemp.screen_loc = ui_temp
+		mymob.bodytemp.icon_state = "gauge_indictator"
+		mymob.bodytemp.SetName("Body Temperature")
+		mymob.bodytemp.screen_loc = UI_METER_BODY_TEMPERATURE
 		hud_elements |= mymob.bodytemp
 
+		mymob.bodytemp_lamp = new /atom/movable/screen()
+		mymob.bodytemp_lamp.icon = ui_style
+		mymob.bodytemp_lamp.icon_state = "cover_alert_0"
+		mymob.bodytemp_lamp.screen_loc = UI_METER_BODY_TEMPERATURE
+		mymob.bodytemp_lamp.layer = UNDER_HUD_LAYER + 2
+		hud_elements |= mymob.bodytemp_lamp
+
+		using = new /atom/movable/screen()
+		using.dir = SOUTH
+		using.icon = ui_style
+		using.icon_state = "cover_temp"
+		using.screen_loc = UI_METER_BODY_TEMPERATURE
+		using.layer = UNDER_HUD_LAYER + 1
+		adding += using
+
 	if(target.isSynthetic())
+
 		target.cells = new /atom/movable/screen()
 		target.cells.icon = 'resources/icons/mob/screen1_robot.dmi'
 		target.cells.icon_state = "charge-empty"
