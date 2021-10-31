@@ -20,6 +20,38 @@
 	var/atom/movable/screen/using
 	var/atom/movable/screen/inventory/inv_box
 
+	using = new /atom/movable/screen() //Right hud bar
+	using.dir = SOUTH
+	using.icon = ui_style
+	using.icon_state = "right_bg"
+	using.screen_loc = "EAST+1,SOUTH to EAST+1,NORTH"
+	using.layer = UNDER_HUD_LAYER
+	adding += using
+
+	using = new /atom/movable/screen() //Left hud bar (leftmost)
+	using.dir = WEST
+	using.icon = ui_style
+	using.icon_state = "left_left"
+	using.screen_loc = "WEST-3,SOUTH to WEST-3,NORTH"
+	using.layer = UNDER_HUD_LAYER
+	adding += using
+
+	using = new /atom/movable/screen() //Left hud bar (center)
+	using.dir = WEST
+	using.icon = ui_style
+	using.icon_state = "left_mid"
+	using.screen_loc = "WEST-2,SOUTH to WEST-2,NORTH"
+	using.layer = UNDER_HUD_LAYER
+	adding += using
+
+	using = new /atom/movable/screen() //Left hud bar (rightmost)
+	using.dir = WEST
+	using.icon = ui_style
+	using.icon_state = "left_right"
+	using.screen_loc = "WEST-1,SOUTH to WEST-1,NORTH"
+	using.layer = UNDER_HUD_LAYER
+	adding += using
+
 	// Draw the various inventory equipment slots.
 	var/has_hidden_gear
 	for(var/gear_slot in hud_data.gear)
@@ -30,7 +62,7 @@
 		inv_box.alpha = ui_alpha
 
 		var/list/slot_data =  hud_data.gear[gear_slot]
-		inv_box.SetName(gear_slot)
+		inv_box.SetName(slot_data["name"])
 		inv_box.screen_loc =  slot_data["loc"]
 		inv_box.slot_id =     slot_data["slot"]
 		inv_box.icon_state =  slot_data["state"]
@@ -125,8 +157,8 @@
 		using = new /atom/movable/screen/inventory()
 		using.SetName("hand")
 		using.icon = ui_style
-		using.icon_state = "hand1"
-		using.screen_loc = ui_swaphand1
+		using.icon_state = "swap"
+		using.screen_loc = UI_SWAPHAND1
 		using.color = ui_color
 		using.alpha = ui_alpha
 		src.adding += using
