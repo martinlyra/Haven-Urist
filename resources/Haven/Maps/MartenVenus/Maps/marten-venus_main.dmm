@@ -203,6 +203,9 @@
 "pg" = (
 /turf/simulated/floor/reinforced,
 /area/space)
+"pE" = (
+/turf/null,
+/area/space)
 "qn" = (
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/space)
@@ -447,9 +450,6 @@
 /area/space)
 "Tw" = (
 /turf/simulated/floor/tiled/steel_grid,
-/area/space)
-"Vn" = (
-/turf/null,
 /area/space)
 "VS" = (
 /obj/effect/floor_decal/industrial/warning/fulltile,
@@ -14305,7 +14305,7 @@ ox
 ox
 ox
 ox
-Vn
+pE
 fx
 fx
 fx
@@ -15769,7 +15769,7 @@ fx
 fx
 fx
 fx
-Vn
+pE
 ox
 ox
 ox
@@ -15809,7 +15809,7 @@ Wm
 Wm
 Wm
 Wm
-Vn
+pE
 ox
 ox
 ox
@@ -15871,7 +15871,7 @@ cx
 cx
 cx
 fx
-Vn
+pE
 ox
 ox
 ox
@@ -15973,7 +15973,7 @@ qT
 cx
 cx
 fx
-Vn
+pE
 ox
 ox
 ox
@@ -16075,7 +16075,7 @@ cx
 cx
 cx
 fx
-Vn
+pE
 ox
 ox
 ox
@@ -16177,7 +16177,7 @@ fx
 fx
 fx
 fx
-Vn
+pE
 ox
 ox
 ox
