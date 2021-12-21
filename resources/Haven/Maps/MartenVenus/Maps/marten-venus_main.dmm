@@ -19,6 +19,9 @@
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/plating,
 /area/space)
+"bm" = (
+/turf/null,
+/area/space)
 "bG" = (
 /obj/machinery/computer/helm{
 	dir = 4
@@ -354,9 +357,6 @@
 	icon_state = "railing0"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/space)
-"JK" = (
-/turf/null,
 /area/space)
 "KZ" = (
 /obj/machinery/computer/rcon{
@@ -14305,7 +14305,7 @@ ox
 ox
 ox
 ox
-JK
+bm
 fx
 fx
 fx
@@ -15769,7 +15769,7 @@ fx
 fx
 fx
 fx
-JK
+bm
 ox
 ox
 ox
@@ -15809,7 +15809,7 @@ Wm
 Wm
 Wm
 Wm
-JK
+bm
 ox
 ox
 ox
@@ -15871,7 +15871,7 @@ cx
 cx
 cx
 fx
-JK
+bm
 ox
 ox
 ox
@@ -15973,7 +15973,7 @@ qT
 cx
 cx
 fx
-JK
+bm
 ox
 ox
 ox
@@ -16075,7 +16075,7 @@ cx
 cx
 cx
 fx
-JK
+bm
 ox
 ox
 ox
@@ -16177,7 +16177,7 @@ fx
 fx
 fx
 fx
-JK
+bm
 ox
 ox
 ox
