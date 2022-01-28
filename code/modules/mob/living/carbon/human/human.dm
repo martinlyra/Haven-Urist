@@ -990,7 +990,6 @@
 			return
 
 		// Clear out their species abilities.
-		species.remove_base_auras(src)
 		species.remove_inherent_verbs(src)
 		holder_type = null
 

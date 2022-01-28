@@ -197,9 +197,6 @@ Please contact me on #coderbus IRC. ~Carn x
 			I = head.get_eye_overlay()
 			if(I) overlays_to_apply += I
 
-	if(auras)
-		overlays_to_apply += auras
-
 	add_overlay(overlays_to_apply)
 
 	var/matrix/M = matrix()

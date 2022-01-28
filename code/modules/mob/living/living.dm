@@ -761,24 +761,10 @@ default behaviour is:
 		..()
 
 /mob/living/update_icons()
-	if(auras)
-		overlays |= auras
-
-/mob/living/proc/add_aura(var/obj/aura/aura)
-	LAZY_ADD_UNIQUE(auras,aura)
-	update_icons()
-	return 1
-
-/mob/living/proc/remove_aura(var/obj/aura/aura)
-	LAZY_REMOVE(auras,aura)
-	update_icons()
-	return 1
+	. = ..()
 
 /mob/living/Destroy()
-	if(auras)
-		for(var/a in auras)
-			remove_aura(a)
-	return ..()
+	. = ..()
 
 /mob/living/proc/melee_accuracy_mods()
 	. = 0
