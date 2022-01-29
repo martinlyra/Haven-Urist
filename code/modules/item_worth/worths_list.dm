@@ -459,7 +459,6 @@ var/list/worths = list(
 	/obj/item/clothing/under/rank/warden = 5,
 	/obj/item/clothing = 50,
 //DEVICES,
-	/obj/item/device/dociler = 490,
 	/obj/item/device/bot_controller = 50,
 	/obj/item/device/mmi = 1200,
 	/obj/item/device/kit/paint = 500,
