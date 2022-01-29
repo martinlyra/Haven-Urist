@@ -501,7 +501,7 @@
 	for(var/mob/living/carbon/M in viewers(world.view, location))
 		switch(get_dist(M, location))
 			if(0 to 3)
-				if(hasvar(M, "glasses"))
+				if(has_var(M, "glasses"))
 					if(istype(M:glasses, /obj/item/clothing/glasses/sunglasses))
 						continue
 
@@ -509,7 +509,7 @@
 				M.Weaken(15)
 
 			if(4 to 5)
-				if(hasvar(M, "glasses"))
+				if(has_var(M, "glasses"))
 					if(istype(M:glasses, /obj/item/clothing/glasses/sunglasses))
 						continue
 

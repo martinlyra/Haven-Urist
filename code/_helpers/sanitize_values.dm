@@ -19,8 +19,6 @@
 	if(default)			return default
 	if(List && List.len)return List[1]
 
-
-
 //more specialised stuff
 /proc/sanitize_gender(gender,neuter=0,plural=0, default="male")
 	switch(gender)
@@ -104,3 +102,12 @@
 			if(!(ainput[1] in 48 to 53) || !(ainput[2] in 48 to 57)) //0 to 5, 0 to 9
 				return (default || "00")
 			return input
+
+//Ensure the frequency is within bounds of what it should be sending/recieving at
+/proc/sanitize_frequency(var/f, var/low = PUBLIC_LOW_FREQ, var/high = PUBLIC_HIGH_FREQ)
+	f = round(f)
+	f = max(low, f)
+	f = min(high, f)
+	if ((f % 2) == 0) //Ensure the last digit is an odd number
+		f += 1
+	return f

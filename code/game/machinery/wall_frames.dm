@@ -41,7 +41,7 @@
 		to_chat(usr, "<span class='danger'>\The [src] cannot be placed in this area.</span>")
 		return
 
-	if(gotwallitem(loc, ndir))
+	if(has_got_wall_object(loc, ndir))
 		to_chat(usr, "<span class='danger'>There's already an item on this wall!</span>")
 		return
 

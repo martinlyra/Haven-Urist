@@ -574,5 +574,12 @@
 	R.Find(text)
 	return R.group[1]
 
+//Turns 1479 into 147.9
+/proc/format_frequency(var/f)
+	return "[round(f / 10)].[f % 10]"
+
+/proc/format_text(text)
+	return replacetext(replacetext(text,"\proper ",""),"\improper ","")
+
 /// Prepares a text to be used for maptext. Use this so it doesn't look hideous.
 #define MAPTEXT(text) {"<span class='maptext'>[##text]</span>"}
