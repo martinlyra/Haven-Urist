@@ -76,8 +76,6 @@
 
 /obj/structure/closet/secure_closet/animal/WillContain()
 	return list(
-		/obj/item/device/assembly/signaler,
-		/obj/item/device/radio/electropack = 3,
 		/obj/item/weapon/gun/launcher/syringe/rapid,
 		/obj/item/weapon/storage/box/syringegun,
 		/obj/item/weapon/storage/box/syringes,

@@ -205,7 +205,7 @@ default behaviour is:
 	return
 
 
-//sort of a legacy burn method for /electrocute, /shock, and the e_chair
+//sort of a legacy burn method for /electrocute and /shock
 /mob/living/proc/burn_skin(burn_amount)
 	take_overall_damage(0, burn_amount)
 
