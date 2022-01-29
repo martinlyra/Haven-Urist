@@ -519,12 +519,6 @@
 	qdel(S)
 	check_health()
 
-/obj/machinery/portable_atmospherics/hydroponics/attack_tk(mob/user as mob)
-	if(dead)
-		remove_dead(user)
-	else if(harvest)
-		harvest(user)
-
 /obj/machinery/portable_atmospherics/hydroponics/attack_hand(mob/user as mob)
 
 	if(istype(usr,/mob/living/silicon))

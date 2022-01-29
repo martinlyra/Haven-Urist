@@ -14,7 +14,7 @@
 	if(on)
 		to_chat(user, "<span class='notice'>[src] is already processing, please wait.</span>")
 		return
-	if(istype(I, /obj/item/weapon/grab)||istype(I, /obj/item/tk_grab))
+	if(istype(I, /obj/item/weapon/grab))
 		to_chat(user, "<span class='warning'>That isn't going to fit.</span>")
 		return
 //	if(!user.unEquip(I))

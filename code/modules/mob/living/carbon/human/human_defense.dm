@@ -231,7 +231,7 @@ meteor_act
 			location.add_blood(src)
 		if(ishuman(attacker))
 			var/mob/living/carbon/human/H = attacker
-			if(get_dist(H, src) <= 1) //people with TK won't get smeared with blood
+			if(get_dist(H, src) <= 1) // so people who are already out of way don't get smeared down
 				H.bloody_body(src)
 				H.bloody_hands(src)
 

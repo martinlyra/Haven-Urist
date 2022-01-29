@@ -442,8 +442,6 @@
 
 		if(prot > 0 || (COLD_RESISTANCE in user.mutations))
 			to_chat(user, "You remove the [get_fitting_name()]")
-		else if(TK in user.mutations)
-			to_chat(user, "You telekinetically remove the [get_fitting_name()].")
 		else
 			to_chat(user, "You try to remove the [get_fitting_name()], but it's too hot and you don't want to burn your hand.")
 			return				// if burned, don't remove the light
@@ -452,15 +450,6 @@
 
 	// create a light tube/bulb item and put it in the user's hand
 	user.put_in_active_hand(remove_bulb())	//puts it in our active hand
-
-
-/obj/machinery/light/attack_tk(mob/user)
-	if(!lightbulb)
-		to_chat(user, "There is no [get_fitting_name()] in this light.")
-		return
-
-	to_chat(user, "You telekinetically remove the [get_fitting_name()].")
-	remove_bulb()
 
 // ghost attack - make lights flicker like an AI, but even spookier!
 /obj/machinery/light/attack_ghost(mob/user)

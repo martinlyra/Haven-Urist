@@ -83,23 +83,6 @@
 	dat += "</table></center>"
 	show_browser(user, "<html><head><title>[name]</title></head><body>[jointext(dat,null)]</body></html>", "window=filingcabinet;size=350x300")
 
-/obj/structure/filingcabinet/attack_tk(mob/user)
-	if(anchored)
-		attack_self_tk(user)
-	else
-		..()
-
-/obj/structure/filingcabinet/attack_self_tk(mob/user)
-	if(contents.len)
-		if(prob(40 + contents.len * 5))
-			var/obj/item/I = pick(contents)
-			I.loc = loc
-			if(prob(25))
-				step_rand(I)
-			to_chat(user, "<span class='notice'>You pull \a [I] out of [src] at random.</span>")
-			return
-	to_chat(user, "<span class='notice'>You find nothing in [src].</span>")
-
 /obj/structure/filingcabinet/Topic(href, href_list)
 	if(href_list["retrieve"])
 		show_browser(usr, "", "window=filingcabinet") // Close the menu

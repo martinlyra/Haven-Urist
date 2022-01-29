@@ -50,9 +50,6 @@
 		if (!(COLD_RESISTANCE in user.mutations))
 			user.mutations.Add(COLD_RESISTANCE)
 
-		if (!(TK in user.mutations))
-			user.mutations.Add(TK)
-
 		if(!(HEAL in user.mutations))
 			user.mutations.Add(HEAL)
 

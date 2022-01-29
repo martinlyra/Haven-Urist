@@ -74,7 +74,7 @@ There are several things that need to be remembered:
 
 
 >	There are also these special cases:
-		update_mutations()	//handles updating your appearance for certain mutations.  e.g TK head-glows
+		update_mutations()	//handles updating your appearance for certain mutations.
 		UpdateDamageIcon()	//handles damage overlays for brute/burn damage //(will rename this when I geta round to it)
 		update_body()	//Handles updating your mob's icon to reflect their gender/race/complexion etc
 		update_hair()	//Handles updating your hair overlay (used to be update_face, but mouth and

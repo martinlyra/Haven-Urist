@@ -117,7 +117,7 @@
 		trigger_aiming(TARGET_CAN_CLICK)
 		return 1
 
-	if(!isturf(loc)) // This is going to stop you from telekinesing from inside a closet, but I don't shed many tears for that
+	if(!isturf(loc))
 		return
 
 	//Atoms on turfs (not on your person)
@@ -162,8 +162,7 @@
 	Translates into attack_hand, etc.
 
 	Note: proximity_flag here is used to distinguish between normal usage (flag=1),
-	and usage when clicking on things telekinetically (flag=0).  This proc will
-	not be called at ranged except with telekinesis.
+	and usage when clicking on things telekinetically (flag=0).
 
 	proximity_flag is not currently passed to attack_hand, and is instead used
 	in human click code to allow glove touches only at melee range.
@@ -172,7 +171,6 @@
 	return
 
 /mob/living/UnarmedAttack(var/atom/A, var/proximity_flag)
-
 	if(GAME_STATE < RUNLEVEL_GAME)
 		to_chat(src, "You cannot attack people before the game has started.")
 		return 0
@@ -186,7 +184,7 @@
 	Ranged unarmed attack:
 
 	This currently is just a default for all mobs, involving
-	laser eyes and telekinesis.  You could easily add exceptions
+	laser eyes.  You could easily add exceptions
 	for things like ranged glove touches, spitting alien acid/neurotoxin,
 	animals lunging, etc.
 */
@@ -195,9 +193,7 @@
 		return
 	if((MUTATION_LASER in mutations) && a_intent == I_HURT)
 		LaserEyes(A) // moved into a proc below
-	else if(TK in mutations)
-		setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-		A.attack_tk(src)
+
 /*
 	Restrained ClickOn
 

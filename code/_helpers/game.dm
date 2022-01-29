@@ -52,7 +52,7 @@
 	if(get_dist(source, user) <= 1)
 		return 1
 
-	return 0 //not in range and not telekinetic
+	return 0 //not in range
 
 // Like view but bypasses luminosity check
 
