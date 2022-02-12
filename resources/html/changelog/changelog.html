@@ -41,6 +41,83 @@
 		-->
 		<div class="commit sansserif">
 
+			<h2 class="date">04 February 2022</h2>
+			<h3 class="author">Lohikar, Semoro, and azizonkg updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Updated the timer subsystem to latest critical Baystation12 code.</li>
+				<li class="tweak">Optimized the timer performance</li>
+				<li class="tweak">Improved the reliability of the timer subsystem and its logic</li>
+			</ul>
+
+			<h2 class="date">02 February 2022</h2>
+			<h3 class="author">martinlyra updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed a priority issue with background ticker subsystems</li>
+				<li class="bugfix">Fixed permission check issues with UI where ghosts would be able to interact UI unrestricted</li>
+				<li class="bugfix">Fixed users never leaving fingerprints on objects they interact with via UI due to improper use of the interaction proc</li>
+			</ul>
+
+			<h2 class="date">01 February 2022</h2>
+			<h3 class="author">martinlyra updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added the missing RCON program UI</li>
+				<li class="bugfix">Addressed a security issue related to dependency in tgUI</li>
+				<li class="rscadd">Added the missing UI for airlocks being controlled by silicons</li>
+				<li class="bugfix">Fixed AI not being able to "see" objects despite player vision</li>
+				<li class="rscadd">Added UI for the Shield Monitoring program</li>
+				<li class="tweak">Changed the toggle button on the shields' mode settings to larger checkbox buttons</li>
+				<li class="bugfix">Fixed the Shield Monitoring program's UI being missing among with few immediate fixes to the UI data and interaction</li>
+			</ul>
+
+			<h2 class="date">29 January 2022</h2>
+			<h3 class="author">martinlyra updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed the main elevator using the wrong turf for the bottommost deck on Pluto</li>
+				<li class="tweak">Due to outdated code, the projectile effect for the ninja net thrower has been disabled</li>
+				<li class="bugfix">Fixed mining turfs showing up as bright when they should not</li>
+				<li class="bugfix">Fixed projectiles not showing up properly</li>
+				<li class="tweak">Optimized how global variables and information are handled by the game.</li>
+				<li class="tweak">Globals, statics, and constants are now unit-tested for sanity</li>
+				<li class="rscadd">Added the missing UI for gas tanks</li>
+				<li class="bugfix">Fixed the UI being missing for all gas tanks that can be activated in hand</li>
+				<li class="tweak">Show Server Revision now shows both the client's and server's full version</li>
+				<li class="tweak">Updated the TGS host to attempt fix withstanding issues with the version information and more features.</li>
+				<li class="bugfix">Fixed test-merge information not showing up properly</li>
+				<li class="bugfix">Fixed sever-revision info not showing up properly</li>
+				<li class="spellcheck">Oxford Comma is now default for text from `english_list`, expect to see them in plenty of places</li>
+				<li class="bugfix">Fixed a runtime error related to vis_locs when viewed in View-Variables debug tool</li>
+			</ul>
+
+			<h2 class="date">24 January 2022</h2>
+			<h3 class="author">Glloyd, martinlyra, Naxodile updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added a pirate station that periodically spawns pirate vessels to fight</li>
+				<li class="rscadd">Added more features to ship combat against NPC vessels</li>
+				<li class="rscadd">Added the datumized faction system from Urist</li>
+				<li class="rscadd">Added factions reputation and relation from Urist</li>
+				<li class="rscadd">Ghosts should be able to spawn as defenders on the pirate station upon the first breach</li>
+				<li class="tweak">Datumized ship weapon ammunition</li>
+				<li class="tweak">Player-controlled vessels should be able to engage in PvP ship combat, untested</li>
+				<li class="tweak">Most Urist content now uses the datumized faction system</li>
+				<li class="tweak">Ports revised burst firing mechanic for ship weapons</li>
+				<li class="balance">NPC ship shields are now generally tougher</li>
+			</ul>
+
+			<h2 class="date">22 January 2022</h2>
+			<h3 class="author">martinlyra updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed atoms not being loaded correctly when spawned midgame.</li>
+			</ul>
+
+			<h2 class="date">13 January 2022</h2>
+			<h3 class="author">martinlyra updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Cleaned up away maps that were causing errors for the game.</li>
+				<li class="bugfix">Fixed a layering issue with disposal pipes.</li>
+				<li class="bugfix">Fixed initialization issues related to explosions spawned in map init.</li>
+				<li class="bugfix">Fixes the multi-z rendering issue, in which it would be permanently broken for a player the moment they enter a submap with incorrect Z ordering.</li>
+			</ul>
+
 			<h2 class="date">21 December 2021</h2>
 			<h3 class="author">martinlyra updated:</h3>
 			<ul class="changes bgimages16">
@@ -68,81 +145,6 @@
 				<li class="bugfix">Fixed "Derelict Station" not loading proper</li>
 				<li class="bugfix">Fixed "Noctis" ship not loading proper</li>
 				<li class="bugfix">Fixed broken geometry of Lost Supply Station</li>
-			</ul>
-
-			<h2 class="date">29 November 2021</h2>
-			<h3 class="author">martinlyra updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="tweak">Converted the elevator panel from hardcoded popup to tgUI</li>
-				<li class="tweak">The elevator panel now shows its current floor</li>
-				<li class="tweak">Elevators are now unit-tested</li>
-				<li class="bugfix">Fixed improper consistency with the world in elevator panels</li>
-			</ul>
-
-			<h2 class="date">28 November 2021</h2>
-			<h3 class="author">martinlyra updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Added tgUI interface for the Power Cell Rack PSU</li>
-				<li class="tweak">Power Cell PSUs no longer require matter bins and always will have capacity for 9 cells.</li>
-				<li class="tweak">Added property to Knob component in tgUI for positioning the tooltip appearing when dragging the knob</li>
-				<li class="bugfix">Fixed the missing interface for tgUI</li>
-				<li class="bugfix">Fixed names being missing from the old plain HTML manifests</li>
-			</ul>
-
-			<h2 class="date">17 November 2021</h2>
-			<h3 class="author">martinlyra updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Fixed the UI for the card modification program</li>
-			</ul>
-
-			<h2 class="date">15 November 2021</h2>
-			<h3 class="author">martinlyra updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="tweak">Changed how the server is listed on the public BYOND Hub</li>
-				<li class="bugfix">Fixed wall sanity checks for window and window-wallframe spawners not functioning properly.</li>
-				<li class="bugfix">Fixed two instances of walls in place where windows should spawn and allow obstructed vision on the Pluto.</li>
-				<li class="tweak">For future mapping and propserity, airlocks and doors now sanity-check their turf locations for illegal turfs like walls.</li>
-				<li class="bugfix">Fixed invalid turfs for airlocks at the Pluto map</li>
-			</ul>
-
-			<h2 class="date">14 November 2021</h2>
-			<h3 class="author">martinlyra updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Fixed the time display being broken on all UIs that use it</li>
-				<li class="bugfix">Fixed the ship helm being unable to be used</li>
-			</ul>
-
-			<h2 class="date">07 November 2021</h2>
-			<h3 class="author">martinlyra updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Fixed exception in the Supply Management Program's UI</li>
-				<li class="tweak">Updated tgUI to latest available from tgstation</li>
-				<li class="bugfix">Fixed the camera console not cleaning up properly</li>
-				<li class="bugfix">Fixed the tgUI for gas canisters</li>
-				<li class="rscadd">Added functional UI for cryocells</li>
-				<li class="bugfix">Fixed issues with rounding in the UI for Gas Heaters/Freezers</li>
-				<li class="bugfix">Fixed the temperature bar not being colour-coded properly</li>
-				<li class="config">Added a VSCode task for quickly testing code on the example map</li>
-			</ul>
-
-			<h2 class="date">05 November 2021</h2>
-			<h3 class="author">martinlyra updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Fixed missing configuration required for TGS 4 hosting</li>
-			</ul>
-
-			<h2 class="date">26 October 2021</h2>
-			<h3 class="author">martinlyra updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="refactor">Moved icons, sound, maps, and other resource files into within a subfolder called resources for organization</li>
-			</ul>
-
-			<h2 class="date">25 October 2021</h2>
-			<h3 class="author">martinlyra updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="tweak">Updated rust_g from 0.4.8 to 0.5.0</li>
-				<li class="tweak">Changed power cells in APCs for critical rooms on Pluto; Atmospherics, Aft First Deck Hallway, Armoury, Bridge, Engineering, Medical, and Security.</li>
-				<li class="bugfix">Fix how some errors and warnings would end up getting ignored because they were not properly flushed to the master log.</li>
 			</ul>
 		</div>
 

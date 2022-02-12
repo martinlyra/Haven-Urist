@@ -6,6 +6,7 @@
 	var/loot = ""			//a list of possible items to spawn- a string of paths
 
 /obj/effect/spawner/lootdrop/Initialize()
+	..()
 	var/list/things = params2list(loot)
 
 	if(things && things.len)
@@ -27,13 +28,14 @@
 	icon = 'resources/icons/mob/screen1.dmi'
 	icon_state = "x2"
 
-/obj/effect/closet_loader/New()
+/obj/effect/closet_loader/Initialize()
+	..()
 	var/turf/T = get_turf(loc)
 	var/obj/structure/closet/C = locate() in T
 	if(!C)
-		qdel(src)
+		return INITIALIZE_HINT_QDEL
 	for(var/obj/O in T.contents)
 		if(!O.simulated || O.density)
 			continue
 		O.forceMove(C)
-	qdel(src)
+	return INITIALIZE_HINT_QDEL
