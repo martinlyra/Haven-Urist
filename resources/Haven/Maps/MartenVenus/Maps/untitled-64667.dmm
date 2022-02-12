@@ -1,4 +1,9 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ai" = (
+/obj/structure/lattice,
+/obj/structure/catwalk,
+/turf/simulated/open,
+/area/space)
 "bm" = (
 /obj/structure/railing/mapped{
 	color = "#b95a00";
@@ -14,12 +19,37 @@
 	},
 /turf/simulated/open,
 /area/space)
+"bw" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/yellow{
+	dir = 6
+	},
+/turf/simulated/wall/r_wall,
+/area/space)
 "ca" = (
 /obj/machinery/dna_scannernew,
 /turf/simulated/floor/plating,
 /area/space)
 "cy" = (
 /turf/simulated/wall/ocp_wall,
+/area/space)
+"dd" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/simple/visible/red{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+	dir = 9
+	},
+/obj/structure/catwalk,
+/turf/simulated/open,
+/area/space)
+"dr" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
+/obj/structure/catwalk,
+/turf/simulated/open,
 /area/space)
 "dQ" = (
 /turf/simulated/wall,
@@ -62,6 +92,10 @@
 /obj/machinery/bodyscanner,
 /turf/simulated/floor/plating,
 /area/space)
+"gl" = (
+/obj/machinery/atmospherics/pipe/simple/visible/yellow,
+/turf/simulated/open,
+/area/space)
 "gp" = (
 /obj/structure/stairs/east,
 /turf/simulated/floor/plating,
@@ -70,15 +104,42 @@
 /obj/structure/hygiene/sink/kitchen,
 /turf/simulated/floor/plating,
 /area/space)
+"gP" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/yellow{
+	dir = 5
+	},
+/turf/simulated/wall/r_wall,
+/area/space)
 "gZ" = (
 /obj/machinery/ion_drive{
 	dir = 1
 	},
 /turf/simulated/floor/plating/airless,
 /area/space)
+"hK" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/red{
+	dir = 1
+	},
+/obj/structure/catwalk,
+/turf/simulated/open,
+/area/space)
 "is" = (
 /obj/structure/ladder,
 /turf/simulated/floor/plating,
+/area/space)
+"jf" = (
+/obj/machinery/atmospherics/pipe/simple/visible/red{
+	dir = 1
+	},
+/obj/structure/catwalk,
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	dir = 4
+	},
+/turf/simulated/open,
 /area/space)
 "kj" = (
 /obj/machinery/door/blast/regular/open,
@@ -121,18 +182,72 @@
 	},
 /turf/simulated/floor/plating,
 /area/space)
+"nI" = (
+/obj/machinery/atmospherics/omni/filter,
+/turf/simulated/floor/plating,
+/area/space)
+"nK" = (
+/obj/machinery/atmospherics/pipe/manifold/visible/red{
+	dir = 4
+	},
+/turf/simulated/wall,
+/area/space)
 "ph" = (
 /obj/structure/railing/mapped{
 	dir = 8
 	},
 /turf/simulated/floor/grass,
 /area/space)
+"pS" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/yellow{
+	dir = 4
+	},
+/turf/simulated/wall/r_wall,
+/area/space)
+"qI" = (
+/obj/machinery/atmospherics/pipe/simple/visible/red{
+	dir = 1
+	},
+/obj/structure/lattice,
+/turf/simulated/open,
+/area/space)
+"rz" = (
+/obj/machinery/atmospherics/pipe/simple/visible/supply,
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 6
+	},
+/turf/simulated/open,
+/area/space)
 "rN" = (
 /turf/simulated/floor/wood,
+/area/space)
+"rS" = (
+/obj/machinery/atmospherics/omni/mixer,
+/obj/structure/lattice,
+/turf/simulated/open,
+/area/space)
+"st" = (
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
+/turf/simulated/open,
 /area/space)
 "su" = (
 /obj/machinery/clonepod,
 /turf/simulated/floor/plating,
+/area/space)
+"sB" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/simple/visible/red{
+	dir = 9
+	},
+/obj/structure/catwalk,
+/turf/simulated/open,
+/area/space)
+"sE" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/simple/visible/red{
+	dir = 5
+	},
+/turf/simulated/open,
 /area/space)
 "sL" = (
 /obj/structure/shuttle/engine/heater{
@@ -147,6 +262,25 @@
 "tJ" = (
 /obj/structure/flora/tree/jungle_small/variant2,
 /turf/simulated/floor/grass,
+/area/space)
+"uH" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 6
+	},
+/turf/simulated/wall/r_wall,
+/area/space)
+"vy" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/turf/simulated/wall/r_wall,
+/area/space)
+"vT" = (
+/obj/structure/lattice,
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	dir = 6
+	},
+/turf/simulated/open,
 /area/space)
 "wG" = (
 /obj/machinery/sleeper,
@@ -173,22 +307,47 @@
 	},
 /turf/simulated/floor/plating,
 /area/space)
+"Am" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/binary/pump/high_power/on/max_pressure,
+/turf/simulated/open,
+/area/space)
 "Ar" = (
 /obj/structure/grille,
 /turf/simulated/floor/plating,
+/area/space)
+"AH" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/simple/visible/red{
+	dir = 4
+	},
+/obj/machinery/atmospherics/binary/pump/high_power/on/max_pressure{
+	dir = 1
+	},
+/turf/simulated/open,
 /area/space)
 "Bc" = (
 /obj/machinery/computer/cloning,
 /turf/simulated/floor/plating,
 /area/space)
-"Bu" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4
-	},
-/turf/simulated/wall/r_wall,
-/area/space)
-"Ds" = (
+"Bp" = (
 /obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/simple/visible/supply,
+/obj/machinery/atmospherics/binary/pump/high_power/on/max_pressure,
+/turf/simulated/open,
+/area/space)
+"Cx" = (
+/obj/structure/lattice,
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
+	dir = 6
+	},
+/turf/simulated/open,
+/area/space)
+"CI" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 5
+	},
 /turf/simulated/open,
 /area/space)
 "DC" = (
@@ -209,9 +368,33 @@
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/plating/airless,
 /area/space)
+"EI" = (
+/obj/machinery/atmospherics/pipe/manifold/visible/green{
+	dir = 8
+	},
+/turf/simulated/open,
+/area/space)
 "EP" = (
 /obj/structure/bed/chair/shuttle/blue,
 /turf/simulated/floor/plating,
+/area/space)
+"Fa" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
+	},
+/obj/structure/catwalk,
+/turf/simulated/open,
+/area/space)
+"Fz" = (
+/obj/structure/lattice,
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/universal{
+	dir = 1
+	},
+/turf/simulated/open,
 /area/space)
 "Gf" = (
 /obj/structure/table/reinforced,
@@ -229,10 +412,23 @@
 	},
 /turf/simulated/floor/plating,
 /area/space)
+"GG" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/blue{
+	dir = 6
+	},
+/turf/simulated/open,
+/area/space)
+"GI" = (
+/obj/machinery/atmospherics/binary/pump/high_power/on/max_pressure{
+	dir = 4
+	},
+/turf/simulated/open,
+/area/space)
 "GV" = (
 /turf/simulated/open,
 /area/space)
-"Hf" = (
+"GW" = (
 /obj/structure/stairs/west,
 /turf/simulated/floor/plating,
 /area/space)
@@ -301,6 +497,43 @@
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/plating,
 /area/space)
+"Ot" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
+	},
+/turf/simulated/wall/r_wall,
+/area/space)
+"OJ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 10
+	},
+/turf/simulated/wall/r_wall,
+/area/space)
+"OQ" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	dir = 4
+	},
+/turf/simulated/open,
+/area/space)
+"Pl" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+	dir = 5
+	},
+/turf/simulated/open,
+/area/space)
+"Pn" = (
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	dir = 10
+	},
+/turf/simulated/open,
+/area/space)
+"Pp" = (
+/obj/machinery/atmospherics/pipe/manifold/visible/supply,
+/obj/structure/catwalk,
+/turf/simulated/open,
+/area/space)
 "Pz" = (
 /obj/structure/railing/mapped{
 	dir = 8
@@ -309,6 +542,13 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
+/area/space)
+"PL" = (
+/obj/machinery/atmospherics/pipe/simple/visible/red{
+	dir = 10
+	},
+/obj/structure/lattice,
+/turf/simulated/open,
 /area/space)
 "PN" = (
 /obj/machinery/power/smes/buildable/preset,
@@ -322,6 +562,18 @@
 /obj/machinery/shipweapons/beam/lightlaser,
 /turf/simulated/floor/plating/airless,
 /area/space)
+"Rg" = (
+/obj/machinery/atmospherics/pipe/simple/visible/universal{
+	dir = 4
+	},
+/obj/structure/lattice,
+/turf/simulated/open,
+/area/space)
+"RD" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
+/turf/simulated/open,
+/area/space)
 "RY" = (
 /obj/machinery/shipweapons/missile/torpedo,
 /turf/simulated/wall,
@@ -333,6 +585,16 @@
 /obj/structure/flora/big/rocks3,
 /turf/simulated/floor/grass,
 /area/space)
+"Tn" = (
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/manifold/visible/green{
+	dir = 8
+	},
+/obj/structure/catwalk,
+/turf/simulated/open,
+/area/space)
 "To" = (
 /obj/structure/bed/chair/shuttle{
 	dir = 1
@@ -341,6 +603,13 @@
 /area/space)
 "TE" = (
 /turf/simulated/floor/plating,
+/area/space)
+"TO" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
+/turf/simulated/open,
 /area/space)
 "Uu" = (
 /obj/machinery/computer/operating{
@@ -372,12 +641,6 @@
 "Wo" = (
 /obj/machinery/chem_master,
 /turf/simulated/floor/plating,
-/area/space)
-"WF" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4
-	},
-/turf/simulated/open,
 /area/space)
 "Ym" = (
 /obj/structure/railing/mapped{
@@ -6664,7 +6927,7 @@ TE
 TE
 TE
 TE
-Hf
+GW
 dQ
 TE
 TE
@@ -7171,13 +7434,13 @@ NL
 NL
 NL
 NL
+TE
+TE
+TE
 NL
-NL
-NL
-NL
-NL
-NL
-NL
+TE
+TE
+TE
 NL
 NL
 lb
@@ -7278,9 +7541,9 @@ NL
 NL
 NL
 NL
-lb
-lb
-lb
+NL
+NL
+NL
 lb
 lb
 lb
@@ -15874,7 +16137,7 @@ xr
 xr
 xr
 dQ
-TE
+dQ
 TE
 TE
 TE
@@ -16078,7 +16341,7 @@ TE
 TE
 TE
 dQ
-TE
+dQ
 TE
 TE
 TE
@@ -16656,8 +16919,8 @@ lb
 lb
 lb
 lb
-lb
-lb
+TE
+NL
 NL
 dQ
 dQ
@@ -16760,9 +17023,9 @@ TE
 TE
 NL
 NL
-NL
-GV
-GV
+ai
+Cx
+vT
 TE
 dQ
 TE
@@ -16857,14 +17120,14 @@ lb
 lb
 lb
 lb
-TE
-TE
-TE
 NL
-GV
-GV
-GV
-GV
+NL
+uH
+vy
+Pl
+GG
+Fz
+Pp
 GV
 TE
 TE
@@ -16959,14 +17222,14 @@ lb
 lb
 lb
 lb
-TE
+NL
 TE
 TE
 NL
-GV
-GV
-GV
-GV
+GI
+GI
+Rg
+OQ
 GV
 TE
 TE
@@ -17061,17 +17324,17 @@ lb
 lb
 lb
 lb
-TE
+NL
 TE
 TE
 NL
-GV
-GV
-NL
-GV
-Ds
-Ds
-Ds
+Rg
+PL
+nK
+jf
+Am
+qI
+sE
 TE
 TE
 NL
@@ -17163,18 +17426,18 @@ lb
 lb
 lb
 lb
-TE
+NL
 TE
 TE
 NL
-GV
-GV
-GV
-GV
-GV
-GV
-GV
-GV
+Pn
+rz
+Bp
+Tn
+rS
+EI
+AH
+CI
 TE
 TE
 TE
@@ -17265,18 +17528,18 @@ lb
 lb
 lb
 lb
-TE
-TE
-TE
 NL
-GV
-WF
-GV
-GV
-GV
-GV
-GV
-WF
+NL
+OJ
+vy
+st
+TO
+RD
+dr
+dd
+hK
+sB
+Fa
 TE
 NL
 NL
@@ -17368,17 +17631,17 @@ lb
 lb
 lb
 TE
-TE
+NL
 TE
 NL
 NL
-Bu
-NL
-TE
-TE
-TE
-NL
-Bu
+Ot
+bw
+gl
+nI
+gl
+gP
+Ot
 NL
 dQ
 TE
@@ -17470,16 +17733,16 @@ lb
 lb
 lb
 TE
-TE
-TE
-TE
 NL
 TE
+TE
+NL
+TE
+pS
 NL
 NL
 NL
-NL
-NL
+pS
 TE
 NL
 dQ
@@ -17572,9 +17835,9 @@ lb
 lb
 lb
 TE
-TE
-TE
-TE
+NL
+NL
+NL
 NL
 TE
 TE
